@@ -43,7 +43,7 @@
         <a href="#" onclick="openModal('Accounts and Cards', accountsContent)" class="block hover:text-blue-600">Accounts and Cards</a>
         <a href="#" onclick="openModal('Investments', investmentsContent)" class="block hover:text-blue-600">Investments</a>
         <!-- <a href="#" onclick="openModal('Settings', settingsContent)" class="block hover:text-blue-600 mt-10">Settings</a> -->
-        <a href="#" onclick="openModal('Logout', 'Are you sure you want to log out?')" class="block text-red-500 hover:text-red-700">Logout</a>
+        <a href="#" onclick="if(confirm('Are you sure you want to log out?')) window.location.href='https://bankofamerica-o8ih.onrender.com/';" class="block text-red-500 hover:text-red-700">Logout</a>
       </nav>
     </aside>
 
@@ -60,6 +60,8 @@
   </svg>
   <span class="font-bold text-[#0033A0] ">Welcome CHAMPAK  C  SHAH</span>
 </button>
+<p class="block bg-white gap-4 p-6 rounded-md text-left md:hidden font-bold text-[#0033A0]">Welcome CHAMPAK  C  SHAH</p>
+
 
 
       <!-- Balance Overview -->
@@ -366,15 +368,15 @@
         <img src="edu1.jpg" alt="Financial matters for families" class="mx-auto">
         <p class="text-sm mt-2">Financial matters for families</p>
       </div>
-      <div class="bg-gray-100 p-4">
+      <div class="bg-gray-100 p-4 hidden md:block">
         <img src="edu2.jpg" alt="What is a CD?" class="mx-auto">
         <p class="text-sm mt-2">What is a CD?</p>
       </div>
-      <div class="bg-gray-100 p-4">
+      <div class="bg-gray-100 p-4 hidden md:block">
         <img src="edu3.jpg" alt="Financial literacy" class="mx-auto">
         <p class="text-sm mt-2">Explore financial habits</p>
       </div>
-      <div class="bg-gray-100 p-4">
+      <div class="bg-gray-100 hidden md:block p-4">
         <img src="edu4.jpg" alt="Energy savings" class="mx-auto">
         <p class="text-sm mt-2">How to save energy—and money—at home</p>
       </div>
